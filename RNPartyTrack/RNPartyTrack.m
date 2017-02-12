@@ -12,7 +12,7 @@
 RCT_EXPORT_MODULE();
 
 // TODO: AndOptions
-RCT_EXPORT_METHOD(sharedInstanceWithAppConfig::(int)appID (NSString *)appKey)
+RCT_EXPORT_METHOD(sharedInstanceWithAppConfig:(int)appID appKey:(NSString *)appKey)
 {
     [[Partytrack sharedInstance] startWithAppID:appID AndKey:appKey AndOptions:launchOptions];
 }
