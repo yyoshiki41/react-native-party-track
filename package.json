@@ -1,0 +1,21 @@
+{
+  "name": "react-native-party-track",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yyoshiki41/react-native-party-track.git"
+  },
+  "author": "Yoshiki Nakagawa",
+  "bugs": {
+    "url": "https://github.com/yyoshiki41/react-native-party-track/issues"
+  },
+  "keywords": [
+    "react-native",
+    "party-track",
+    "ios",
+    "android"
+  ],
+  "homepage": "https://github.com/yyoshiki41/react-native-party-track#readme"
+}
