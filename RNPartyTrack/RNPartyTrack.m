@@ -7,11 +7,15 @@
 #import "RNPartyTrack.h"
 #import <Partytrack/Partytrack.h>
 
-#define kUserAgentKey @"UserAgent"
-
-@implementation RNUserAgent
+@implementation RNPartyTrack
 
 RCT_EXPORT_MODULE();
+
+// TODO: AndOptions
+RCT_EXPORT_METHOD(sharedInstanceWithAppConfig::(int)appID (NSString *)appKey)
+{
+    [[Partytrack sharedInstance] startWithAppID:appID AndKey:appKey AndOptions:launchOptions];
+}
 
 RCT_EXPORT_METHOD(sendEventWithID:(NSString *)eventID)
 {
