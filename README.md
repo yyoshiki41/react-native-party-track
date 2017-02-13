@@ -33,3 +33,11 @@ Add path to `Partytrack.framework` in *RNPartyTrack.xcodeproj* > *Build Settings
 TODO
 
 ## Usage
+
+```javascript
+//Require the module
+var PartyTrack = require('react-native-party-track').default;
+
+//Send an event
+PartyTrack.sendEventWithID(1);
+```
