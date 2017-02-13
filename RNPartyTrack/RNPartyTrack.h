@@ -1,11 +1,13 @@
 //
-//  RNMixpanel.h
+//  RNPartyTrack.h
+//  RNPartyTrack
 //
-//  Created by Yoshiki Nakagawa on 12/02/2017.
+//  Created by Yoshiki Nakagawa on 2017/02/13.
+//  Copyright © 2017 Yoshiki Nakagawa. All rights reserved.
 //
 
 #import "RCTBridgeModule.h"
 
-@interface RNPartyTrack : NSObject <RCTBridgeModule>
+@interface RNPartyTrack : NSObject<RCTBridgeModule>
 
 @end
