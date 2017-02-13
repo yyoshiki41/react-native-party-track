@@ -14,10 +14,9 @@ React Native wrapper for [Party Track](http://partytrack.it/).
 
 ```bash
 $ npm install react-native-party-track --save
-$ react-native link react-native-party-track
 ```
 
-## iOS Setup
+## ■ iOS Setup
 
 ```bash
 $ react-native link react-native-party-track
@@ -28,7 +27,7 @@ $ react-native link react-native-party-track
 
 Add path to `Partytrack.framework` in *RNPartyTrack.xcodeproj* > *Build Settings* > *FRAMEWORK_SEARCH_PATHS*.
 
-## Android Setup
+## ■ Android Setup
 
 TODO
 
