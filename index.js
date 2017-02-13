@@ -1,3 +1,5 @@
+'use strict';
+
 import { NativeModules } from "react-native";
 const { RNPartyTrack } = NativeModules;
 
