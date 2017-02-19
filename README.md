@@ -30,8 +30,34 @@ Add path to `Partytrack.framework` in *RNPartyTrack.xcodeproj* > *Build Settings
 
 ## ■ Android Setup
 
-This library imports your project's `android/app/libs/partytrack.jar`.
-If there is not, please fix relative path in `android/build.gradle`.
+In `android/app/build.gradle`
+
+```diff
+dependencies {
+    ...
++   compile project(':react-native-party-track')
+}
+```
+
+In `MainApplication.java`
+
+```diff
++ import com.yyoshiki41.RNPartyTrack.RNPartyTrack;
+
+public class MainApplication extends Application implements ReactApplication {
+    ...
+    @Override
+    protected List<ReactPackage> getPackages() {
+      return Arrays.<ReactPackage>asList(
+          ...
++         new RNPartyTrack()
+      );
+    }
+}
+```
+
+This package needs `android/app/libs/partytrack.jar` in your project.
+If there is not, fix a relative path in `android/build.gradle`.
 
 ### Troubleshooting
 
