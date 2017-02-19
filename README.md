@@ -23,20 +23,34 @@ $ react-native link react-native-party-track
 ```
 
 ### Troubleshooting
+
 - `'Partytrack/Partytrack.h' file not found`
 
 Add path to `Partytrack.framework` in *RNPartyTrack.xcodeproj* > *Build Settings* > *FRAMEWORK_SEARCH_PATHS*.
 
 ## ■ Android Setup
 
-TODO
+This library imports your project's `android/app/libs/partytrack.jar`.
+If there is not, please fix relative path in `android/build.gradle`.
+
+### Troubleshooting
+
+When your projects's `android/app/build.gradle` includes `*.jar`, fix like below.
+
+```diff
+dependencies {
+    ...
+-   compile fileTree(include: ['*.jar'], dir: 'libs')
++   compile fileTree(include: ['*.jar'], dir: 'libs', exclude: 'partytrack.jar')
+}
+```
 
 ## Usage
 
 ```javascript
-//Require the module
+// Require the module
 var PartyTrack = require('react-native-party-track').default;
 
-//Send an event
+// Send an event
 PartyTrack.sendEventWithID(1);
 ```
