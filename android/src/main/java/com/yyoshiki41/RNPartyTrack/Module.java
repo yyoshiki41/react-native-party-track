@@ -17,6 +17,12 @@ public class Module extends ReactContextBaseJavaModule {
     return "RNPartyTrack";
   }
 
+  // TODO
+  @ReactMethod
+  public void startWithAppID(Context context, int appId, String appKey) {
+    Track.start(context, appId, appKey);
+  }
+
   @ReactMethod
   public void sendEventWithID(int id) {
     Track.event(id);
