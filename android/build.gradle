@@ -41,6 +41,6 @@ repositories {
 
 dependencies {
     compile 'com.facebook.react:react-native:+'
-    // TODO:
-    compile files('libs/partytrack.jar')
+    // relative path
+    compile files('../../../android/app/libs/partytrack.jar')
 }
