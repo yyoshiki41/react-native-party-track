@@ -18,10 +18,12 @@ public class Module extends ReactContextBaseJavaModule {
   }
 
   // TODO
+  /*
   @ReactMethod
   public void startWithAppID(Context context, int appId, String appKey) {
     Track.start(context, appId, appKey);
   }
+  */
 
   @ReactMethod
   public void sendEventWithID(int id) {
