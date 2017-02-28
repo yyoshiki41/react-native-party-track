@@ -6,7 +6,7 @@
 //  Copyright © 2017 Yoshiki Nakagawa. All rights reserved.
 //
 
-#import "RCTBridgeModule.h"
+#import <React/RCTBridgeModule.h>
 
 @interface RNPartyTrack : NSObject<RCTBridgeModule>
 
