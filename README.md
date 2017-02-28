@@ -8,7 +8,7 @@ React Native wrapper for [Party Track](http://partytrack.it/).
 ## Requirements
 
 - Party Track SDK
-- React Native ( < v0.40.0 )
+- React Native
 
 ## Installation
 
