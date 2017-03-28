@@ -29,4 +29,9 @@ public class Module extends ReactContextBaseJavaModule {
   public void sendEventWithID(int id) {
     Track.event(id);
   }
+
+  @ReactMethod
+  public void setClientID(String value) {
+    Track.setOptionalParam(Track.CLIENT_ID, value);
+  }
 }
