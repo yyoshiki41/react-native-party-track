@@ -26,4 +26,9 @@ RCT_EXPORT_METHOD(sendEventWithID:(int)eventID)
     [[Partytrack sharedInstance] sendEventWithID:eventID];
 }
 
+RCT_EXPORT_METHOD(setClientID:(NSString)configureValue)
+{
+    [[Partytrack sharedInstance] setConfigureWithName:@"client_id" AndValue:configureValue];
+}
+
 @end
