@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D02198AE1F7A805600724D20 /* Partytrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D02198AD1F7A805600724D20 /* Partytrack.framework */; };
 		F57FD36E1E514DCF00174E5E /* RNPartyTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = F57FD36D1E514DCF00174E5E /* RNPartyTrack.m */; };
 		F57FD36F1E514DCF00174E5E /* RNPartyTrack.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F57FD36C1E514DCF00174E5E /* RNPartyTrack.h */; };
 /* End PBXBuildFile section */
@@ -25,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D02198AD1F7A805600724D20 /* Partytrack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Partytrack.framework; path = Example/ios/Partytrack.framework; sourceTree = "<group>"; };
 		F57FD3691E514DCF00174E5E /* libRNPartyTrack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNPartyTrack.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57FD36C1E514DCF00174E5E /* RNPartyTrack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNPartyTrack.h; sourceTree = "<group>"; };
 		F57FD36D1E514DCF00174E5E /* RNPartyTrack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNPartyTrack.m; sourceTree = "<group>"; };
@@ -35,17 +37,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D02198AE1F7A805600724D20 /* Partytrack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D02198AC1F7A805600724D20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D02198AD1F7A805600724D20 /* Partytrack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F57FD3601E514DCF00174E5E = {
 			isa = PBXGroup;
 			children = (
 				F57FD36B1E514DCF00174E5E /* RNPartyTrack */,
 				F57FD36A1E514DCF00174E5E /* Products */,
+				D02198AC1F7A805600724D20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,6 +243,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 4G48CX5M4M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Example/ios",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/node_modules/react-native/React/**",
@@ -249,6 +265,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SRCROOT)/../../ios",
 					"$(SRCROOT)/../../",
+					"$(PROJECT_DIR)/Example/ios",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
