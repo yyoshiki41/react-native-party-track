@@ -21,14 +21,26 @@ RCT_EXPORT_METHOD(startWithAppID:(int)appID appKey:(NSString *)appKey launchOpti
 }
 */
 
-RCT_EXPORT_METHOD(sendEventWithID:(int)eventID)
+RCT_EXPORT_METHOD(sendEventWithID:(int)eventID resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
 {
-    [[Partytrack sharedInstance] sendEventWithID:eventID];
+    @try {
+        [[Partytrack sharedInstance] sendEventWithID:eventID];
+        resolve(@"success");
+    }
+    @catch (NSException *exception) {
+        reject(@"partytrack_exception", @"party track sendEventWithID throws exception", exception);
+    }
 }
 
-RCT_EXPORT_METHOD(setClientID:(NSString *)configureValue)
+RCT_EXPORT_METHOD(setClientID:(NSString *)configureValue resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
 {
-    [[Partytrack sharedInstance] setConfigureWithName:@"client_id" AndValue:configureValue];
+    @try {
+        [[Partytrack sharedInstance] setConfigureWithName:@"client_id" AndValue:configureValue];
+        resolve(@"success");
+    }
+    @catch (NSException *exception) {
+        reject(@"partytrack_exception", @"party track setConfigureWithName throws exception", exception);
+    }
 }
 
 @end

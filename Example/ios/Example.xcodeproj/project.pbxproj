@@ -280,7 +280,6 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		9CB69993C8404F30A9BB5A79 /* RNPartyTrack.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNPartyTrack.xcodeproj; path = "../node_modules/react-native-party-track/RNPartyTrack.xcodeproj"; sourceTree = "<group>"; };
-		D02198DF1F7A89B000724D20 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = README.txt; path = Partytrack.framework/README.txt; sourceTree = "<group>"; };
 		D02198E11F7A8A5300724D20 /* Partytrack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Partytrack.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -528,7 +527,6 @@
 			isa = PBXGroup;
 			children = (
 				D02198E11F7A8A5300724D20 /* Partytrack.framework */,
-				D02198DF1F7A89B000724D20 /* README.txt */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
