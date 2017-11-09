@@ -230,6 +230,20 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
+		BD6ADB671FB467AC00C54840 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D383D3C1EBD27B6005632C8;
+			remoteInfo = "third-party-tvOS";
+		};
+		BD6ADB691FB467AC00C54840 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D383D621EBD27B9005632C8;
+			remoteInfo = "double-conversion-tvOS";
+		};
 		D02198D71F7A80E300724D20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
@@ -440,7 +454,9 @@
 				3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */,
 				3DAD3EAF1DF850E9000B6D8A /* libjschelpers.a */,
 				D02198D81F7A80E300724D20 /* libthird-party.a */,
+				BD6ADB681FB467AC00C54840 /* libthird-party.a */,
 				D02198DA1F7A80E300724D20 /* libdouble-conversion.a */,
+				BD6ADB6A1FB467AC00C54840 /* libdouble-conversion.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -499,6 +515,7 @@
 				00E356EF1AD99517003FC87E /* ExampleTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				D02198DE1F7A89AF00724D20 /* Frameworks */,
+				BD6ADB491FB467AA00C54840 /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -513,6 +530,14 @@
 				2D02E4901E0B4A5D006451C7 /* Example-tvOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BD6ADB491FB467AA00C54840 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				5AE9643C8A2C4E7D875DEE27 /* libRNPartyTrack.a */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		D02198BA1F7A80E300724D20 /* Products */ = {
@@ -875,6 +900,20 @@
 			fileType = archive.ar;
 			path = libRCTText.a;
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD6ADB681FB467AC00C54840 /* libthird-party.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libthird-party.a";
+			remoteRef = BD6ADB671FB467AC00C54840 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BD6ADB6A1FB467AC00C54840 /* libdouble-conversion.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libdouble-conversion.a";
+			remoteRef = BD6ADB691FB467AC00C54840 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		D02198D81F7A80E300724D20 /* libthird-party.a */ = {
